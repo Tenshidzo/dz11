@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .comment{
+        border: 1px solid #ccc;
+        padding: 5px;
+    }
+
+    .admin {
+        background-color: #ffcccc;
+        font-weight: bold;
+    }
+    .content {
+        border-bottom: 1px solid #ccc;
+    }
+    .hidden {
+        display: none;
+    }
+    .panel {
+    border: 1px solid #ccc;
+    margin: 20px;
+    overflow: hidden;
+}
+
+
+.header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content1 {
+    padding: 10px;
+    display: none;
+}
+</style>
+</head>
+<body>
+    <div class="comment">Admin написал... Lorem ipsum</div>
+    <div class="comment">Пользователь написал... Lorem</div>
+    <div class="content">
+        <p>Первый абзац <a href="#" class="read-more">Читать дальше...</a></p>
+        <p class="hidden">Дополнительный текст, который должен быть виден после нажатия на ссылку.</p>
+        <p class="hidden">Еще дополнительный текст, который должен быть виден после нажатия на ссылку.</p>
+        <p class="hidden">Еще дополнительный текст, который должен быть виден после нажатия на ссылку.</p>
+    </div>
+    <div class="panel">
+        <div class="header">
+            <span>Заголовок</span>
+            <button class="toggle-panel">Открыть &#9660;</button>
+        </div>
+        <div class="content1">
+            <img src="artwork_-Cyberpunk-2077_-Akira_-motorcycle-_-2560x1600-Wallpaper-wallhaven_cc.png" alt="Image">
+            <p>Текст и изображение здесь</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
